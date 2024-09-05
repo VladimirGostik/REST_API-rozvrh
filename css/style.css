@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background: #a8d3c9;
+    background: -webkit-linear-gradient(to right, #95cde7, #aab6ee);
+    background: linear-gradient(to right, #a8d3c9, #aab6ee);
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    margin-bottom: 20px;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#rozvrh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));  /* Adjust width as needed */
+    justify-content: space-around;  /* Center horizontally */
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+.grid {
+    display: grid;
+    grid-gap: 20px; /* Adjust spacing between columns as needed */
+  }
+
+  .den {
+    width: auto;  /* Allow natural width based on content */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;  /* Add spacing between rows */
+  }
+  
+
+  .den h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+.predmet {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.cvičenie {
+    background-color: #ffe0b2; /* Oranžová pre cvičenia */
+}
+
+.prednáška {
+    background-color: #b2ebf2; /* Modrá pre prednášky */
+}
+
+.telesna_vychova,
+.konzultácia {
+    background-color: lightblue;
+}
+
+.legend {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.legend-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.legend-item span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 16px); /* Adjusted to fit smaller screens */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .grid-cols-3 {
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+  }
